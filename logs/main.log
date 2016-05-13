@@ -2418,3 +2418,5 @@ Caused by: java.lang.ClassNotFoundException: org.apache.activemq.store.kahadb.Ka
 	... 5 more
 6096 [main] INFO  wdsr.exercise4.sender.JmsSender [] - 10000 non-persistent messages sent in 1745 milliseconds.
 103246 [main] INFO  wdsr.exercise4.sender.JmsSender [] - 10000 persistent messages sent in 97146 milliseconds.
+5423 [main] INFO  wdsr.exercise4.sender.JmsSender [] - 10000 non-persistent messages sent in 2022 milliseconds.
+93564 [main] INFO  wdsr.exercise4.sender.JmsSender [] - 10000 persistent messages sent in 88138 milliseconds.
