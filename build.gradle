@@ -1,4 +1,7 @@
 apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName="wdsr.exercise4.Main"
 
 sourceCompatibility = 1.8
 version = '1.0'
@@ -14,13 +17,6 @@ ext {
     junitVersion = '4.12'
 	
 	libraries = [
-        spring: [
-                  "org.springframework:spring-core:${springVersion}",
-                  "org.springframework:spring-tx:${springVersion}",
-                  "org.springframework:spring-jms:${springVersion}",
-                  "org.springframework:spring-aop:${springVersion}",
-        ],
-
         activemqCore: [
                 "org.apache.activemq:activemq-broker:${activemqVersion}",
                 "org.apache.activemq:activemq-kahadb-store:${activemqVersion}",
@@ -38,10 +34,5 @@ ext {
 dependencies {
     compile "javax:javaee-api:7.0"
     compile "org.apache.activemq:activemq-spring:${activemqVersion}"
-    compile libraries.spring
     compile libraries.log4j
-    testCompile libraries.activemqCore
-    testCompile "junit:junit:${junitVersion}"
-	testCompile "org.mockito:mockito-core:1.10.19"
-    testCompile "org.springframework:spring-test:${springVersion}"
 }

@@ -1918,3 +1918,503 @@ Price= 10
 13876 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopped KahaDB
 14289 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-61804-1463135191596-0:8) uptime 1.722 seconds
 14290 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-61804-1463135191596-0:8) is shutdown
+2073 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Using Persistence Adapter: KahaDBPersistenceAdapter[H:\WDSR\exercise4\activemq-data\localhost\KahaDB]
+2083 [JMX connector] INFO  org.apache.activemq.broker.jmx.ManagementContext [] - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2363 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - KahaDB is version 6
+2398 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovering from the journal @1:1623268
+2398 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovery replayed 1 operations from the journal in 0.019 seconds.
+2411 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[H:\WDSR\exercise4\activemq-data\localhost\tmp_storage] started
+2537 [Test worker] INFO  org.apache.activemq.util.IdGenerator [] - Sanitized hostname from: Rafa³-Komputer to: Rafa-Komputer
+2577 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:1) is starting
+2677 [Test worker] INFO  org.apache.activemq.transport.TransportServerThreadSupport [] - Listening for connections at: tcp://127.0.0.1:62616?deleteAllMessagesOnStartup=true
+2677 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true started
+2678 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:1) started
+2678 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - For help or more information please see: http://activemq.apache.org
+2695 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Store limit is 102400 mb (current store usage is 1 mb). The data directory: H:\WDSR\exercise4\activemq-data\localhost\KahaDB only has 8474 mb of usable space. - resetting to maximum available disk space: 8474 mb
+2706 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: H:\WDSR\exercise4\activemq-data\localhost only has 8473 mb of usable space. - resetting to maximum available disk space: 8473 mb
+2828 [Test worker] INFO  wdsr.exercise4.receiver.ReceiveTest [] - Setting JMS receive timeout to 100ms
+3048 [Test worker] INFO  wdsr.exercise4.receiver.ReceiveTest [] - alertText=
+Timestamp=1463138233690
+Stock=GOOG
+Volume=500000
+3055 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost started
+3122 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost stopped
+3126 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:1) is shutting down
+3127 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true stopped
+3129 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[H:\WDSR\exercise4\activemq-data\localhost\tmp_storage] stopped
+3130 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async queue tasks
+3130 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async topic tasks
+3130 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopped KahaDB
+3383 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:1) uptime 1.489 seconds
+3384 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:1) is shutdown
+3493 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Using Persistence Adapter: KahaDBPersistenceAdapter[H:\WDSR\exercise4\activemq-data\localhost\KahaDB]
+3495 [JMX connector] INFO  org.apache.activemq.broker.jmx.ManagementContext [] - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+3724 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - KahaDB is version 6
+3727 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovering from the journal @1:1633546
+3727 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovery replayed 1 operations from the journal in 0.002 seconds.
+3728 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[H:\WDSR\exercise4\activemq-data\localhost\tmp_storage] started
+3728 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:2) is starting
+3741 [Test worker] INFO  org.apache.activemq.transport.TransportServerThreadSupport [] - Listening for connections at: tcp://127.0.0.1:62616?deleteAllMessagesOnStartup=true
+3742 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true started
+3742 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:2) started
+3742 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - For help or more information please see: http://activemq.apache.org
+3758 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Store limit is 102400 mb (current store usage is 1 mb). The data directory: H:\WDSR\exercise4\activemq-data\localhost\KahaDB only has 8474 mb of usable space. - resetting to maximum available disk space: 8474 mb
+3769 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: H:\WDSR\exercise4\activemq-data\localhost only has 8473 mb of usable space. - resetting to maximum available disk space: 8473 mb
+3787 [Test worker] INFO  wdsr.exercise4.receiver.ReceiveTest [] - Setting JMS receive timeout to 100ms
+3901 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost started
+3925 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost stopped
+3927 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:2) is shutting down
+3927 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true stopped
+3928 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[H:\WDSR\exercise4\activemq-data\localhost\tmp_storage] stopped
+3928 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async queue tasks
+3928 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async topic tasks
+3928 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopped KahaDB
+4234 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:2) uptime 0.747 seconds
+4235 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:2) is shutdown
+4308 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Using Persistence Adapter: KahaDBPersistenceAdapter[H:\WDSR\exercise4\activemq-data\localhost\KahaDB]
+4309 [JMX connector] INFO  org.apache.activemq.broker.jmx.ManagementContext [] - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+4527 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - KahaDB is version 6
+4534 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovering from the journal @1:1644201
+4534 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovery replayed 1 operations from the journal in 0.006 seconds.
+4535 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[H:\WDSR\exercise4\activemq-data\localhost\tmp_storage] started
+4536 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:3) is starting
+4551 [Test worker] INFO  org.apache.activemq.transport.TransportServerThreadSupport [] - Listening for connections at: tcp://127.0.0.1:62616?deleteAllMessagesOnStartup=true
+4551 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true started
+4551 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:3) started
+4551 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - For help or more information please see: http://activemq.apache.org
+4568 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Store limit is 102400 mb (current store usage is 1 mb). The data directory: H:\WDSR\exercise4\activemq-data\localhost\KahaDB only has 8474 mb of usable space. - resetting to maximum available disk space: 8474 mb
+4580 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: H:\WDSR\exercise4\activemq-data\localhost only has 8473 mb of usable space. - resetting to maximum available disk space: 8473 mb
+4599 [Test worker] INFO  wdsr.exercise4.receiver.ReceiveTest [] - Setting JMS receive timeout to 100ms
+4714 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost started
+4740 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost stopped
+4742 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:3) is shutting down
+4743 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true stopped
+4744 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[H:\WDSR\exercise4\activemq-data\localhost\tmp_storage] stopped
+4744 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async queue tasks
+4744 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async topic tasks
+4744 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopped KahaDB
+5029 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:3) uptime 0.726 seconds
+5029 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:3) is shutdown
+5103 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Using Persistence Adapter: KahaDBPersistenceAdapter[H:\WDSR\exercise4\activemq-data\localhost\KahaDB]
+5104 [JMX connector] INFO  org.apache.activemq.broker.jmx.ManagementContext [] - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+5314 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - KahaDB is version 6
+5315 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovering from the journal @1:1654561
+5316 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovery replayed 1 operations from the journal in 0.002 seconds.
+5319 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[H:\WDSR\exercise4\activemq-data\localhost\tmp_storage] started
+5320 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:4) is starting
+5329 [Test worker] INFO  org.apache.activemq.transport.TransportServerThreadSupport [] - Listening for connections at: tcp://127.0.0.1:62616?deleteAllMessagesOnStartup=true
+5329 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true started
+5329 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:4) started
+5329 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - For help or more information please see: http://activemq.apache.org
+5344 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Store limit is 102400 mb (current store usage is 1 mb). The data directory: H:\WDSR\exercise4\activemq-data\localhost\KahaDB only has 8474 mb of usable space. - resetting to maximum available disk space: 8474 mb
+5356 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: H:\WDSR\exercise4\activemq-data\localhost only has 8472 mb of usable space. - resetting to maximum available disk space: 8472 mb
+5371 [Test worker] INFO  wdsr.exercise4.receiver.ReceiveTest [] - Setting JMS receive timeout to 100ms
+5485 [Test worker] INFO  wdsr.exercise4.receiver.ReceiveTest [] - alertText1=
+Timestamp=1463138236127
+Stock=GOOG
+Volume=500000
+5485 [Test worker] INFO  wdsr.exercise4.receiver.ReceiveTest [] - alertText2=
+Timestamp=1463138236127
+Stock=MSFT
+Volume=500000
+5485 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost started
+5518 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost stopped
+5520 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:4) is shutting down
+5521 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true stopped
+5521 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[H:\WDSR\exercise4\activemq-data\localhost\tmp_storage] stopped
+5521 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async queue tasks
+5521 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async topic tasks
+5521 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopped KahaDB
+5816 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:4) uptime 0.718 seconds
+5817 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:4) is shutdown
+5905 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Using Persistence Adapter: KahaDBPersistenceAdapter[H:\WDSR\exercise4\activemq-data\localhost\KahaDB]
+5907 [JMX connector] INFO  org.apache.activemq.broker.jmx.ManagementContext [] - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+6115 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - KahaDB is version 6
+6122 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovering from the journal @1:1665606
+6122 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovery replayed 1 operations from the journal in 0.006 seconds.
+6123 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[H:\WDSR\exercise4\activemq-data\localhost\tmp_storage] started
+6124 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:5) is starting
+6134 [Test worker] INFO  org.apache.activemq.transport.TransportServerThreadSupport [] - Listening for connections at: tcp://127.0.0.1:62616?deleteAllMessagesOnStartup=true
+6135 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true started
+6135 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:5) started
+6135 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - For help or more information please see: http://activemq.apache.org
+6150 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Store limit is 102400 mb (current store usage is 1 mb). The data directory: H:\WDSR\exercise4\activemq-data\localhost\KahaDB only has 8473 mb of usable space. - resetting to maximum available disk space: 8473 mb
+6161 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: H:\WDSR\exercise4\activemq-data\localhost only has 8472 mb of usable space. - resetting to maximum available disk space: 8472 mb
+6176 [Test worker] INFO  wdsr.exercise4.receiver.ReceiveTest [] - Setting JMS receive timeout to 100ms
+6295 [Test worker] INFO  wdsr.exercise4.receiver.ReceiveTest [] - AlertText=
+Timestamp=1463138236936
+Stock=GOOG
+Price= 10
+6296 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost started
+6336 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost stopped
+6341 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:5) is shutting down
+6342 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true stopped
+6342 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[H:\WDSR\exercise4\activemq-data\localhost\tmp_storage] stopped
+6342 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async queue tasks
+6342 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async topic tasks
+6343 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopped KahaDB
+6618 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:5) uptime 0.717 seconds
+6618 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:5) is shutdown
+6702 [JMX connector] INFO  org.apache.activemq.broker.jmx.ManagementContext [] - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+6702 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Using Persistence Adapter: KahaDBPersistenceAdapter[H:\WDSR\exercise4\activemq-data\localhost\KahaDB]
+7515 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - KahaDB is version 6
+7527 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovering from the journal @1:1675886
+7528 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovery replayed 1 operations from the journal in 0.009 seconds.
+7536 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[H:\WDSR\exercise4\activemq-data\localhost\tmp_storage] started
+7538 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:6) is starting
+7555 [Test worker] INFO  org.apache.activemq.transport.TransportServerThreadSupport [] - Listening for connections at: tcp://127.0.0.1:62616?deleteAllMessagesOnStartup=true
+7556 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true started
+7558 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:6) started
+7558 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - For help or more information please see: http://activemq.apache.org
+7576 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Store limit is 102400 mb (current store usage is 1 mb). The data directory: H:\WDSR\exercise4\activemq-data\localhost\KahaDB only has 8473 mb of usable space. - resetting to maximum available disk space: 8473 mb
+7586 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: H:\WDSR\exercise4\activemq-data\localhost only has 8472 mb of usable space. - resetting to maximum available disk space: 8472 mb
+7717 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost started
+7730 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost stopped
+8742 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:6) is shutting down
+8747 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true stopped
+8748 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[H:\WDSR\exercise4\activemq-data\localhost\tmp_storage] stopped
+8748 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async queue tasks
+8748 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async topic tasks
+8748 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopped KahaDB
+9038 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:6) uptime 2.340 seconds
+9038 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:6) is shutdown
+9140 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Using Persistence Adapter: KahaDBPersistenceAdapter[H:\WDSR\exercise4\activemq-data\localhost\KahaDB]
+9145 [JMX connector] INFO  org.apache.activemq.broker.jmx.ManagementContext [] - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+9353 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - KahaDB is version 6
+9355 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovering from the journal @1:1685410
+9355 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovery replayed 1 operations from the journal in 0.001 seconds.
+9356 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[H:\WDSR\exercise4\activemq-data\localhost\tmp_storage] started
+9357 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:7) is starting
+9363 [Test worker] INFO  org.apache.activemq.transport.TransportServerThreadSupport [] - Listening for connections at: tcp://127.0.0.1:62616?deleteAllMessagesOnStartup=true
+9364 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true started
+9364 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:7) started
+9364 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - For help or more information please see: http://activemq.apache.org
+9378 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Store limit is 102400 mb (current store usage is 1 mb). The data directory: H:\WDSR\exercise4\activemq-data\localhost\KahaDB only has 8473 mb of usable space. - resetting to maximum available disk space: 8473 mb
+9388 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: H:\WDSR\exercise4\activemq-data\localhost only has 8472 mb of usable space. - resetting to maximum available disk space: 8472 mb
+9422 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost started
+9427 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost stopped
+10428 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:7) is shutting down
+10443 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true stopped
+10445 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[H:\WDSR\exercise4\activemq-data\localhost\tmp_storage] stopped
+10445 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async queue tasks
+10446 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async topic tasks
+10446 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopped KahaDB
+10857 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:7) uptime 1.721 seconds
+10858 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:7) is shutdown
+10962 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Using Persistence Adapter: KahaDBPersistenceAdapter[H:\WDSR\exercise4\activemq-data\localhost\KahaDB]
+10964 [JMX connector] INFO  org.apache.activemq.broker.jmx.ManagementContext [] - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+11179 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - KahaDB is version 6
+11181 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovering from the journal @1:1694934
+11181 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovery replayed 1 operations from the journal in 0.001 seconds.
+11182 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[H:\WDSR\exercise4\activemq-data\localhost\tmp_storage] started
+11183 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:8) is starting
+11190 [Test worker] INFO  org.apache.activemq.transport.TransportServerThreadSupport [] - Listening for connections at: tcp://127.0.0.1:62616?deleteAllMessagesOnStartup=true
+11190 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true started
+11191 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:8) started
+11191 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - For help or more information please see: http://activemq.apache.org
+11204 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Store limit is 102400 mb (current store usage is 1 mb). The data directory: H:\WDSR\exercise4\activemq-data\localhost\KahaDB only has 8473 mb of usable space. - resetting to maximum available disk space: 8473 mb
+11215 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: H:\WDSR\exercise4\activemq-data\localhost only has 8472 mb of usable space. - resetting to maximum available disk space: 8472 mb
+11248 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost started
+11256 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost stopped
+12257 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:8) is shutting down
+12270 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true stopped
+12272 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[H:\WDSR\exercise4\activemq-data\localhost\tmp_storage] stopped
+12272 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async queue tasks
+12272 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async topic tasks
+12272 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopped KahaDB
+12684 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:8) uptime 1.729 seconds
+12685 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:Rafa-Komputer-62419-1463138233079-0:8) is shutdown
+3252 [main] ERROR org.apache.activemq.broker.BrokerService [] - Cannot create SystemUsage
+java.io.IOException: org.apache.activemq.store.kahadb.KahaDBPersistenceAdapter
+	at org.apache.activemq.util.IOExceptionSupport.create(IOExceptionSupport.java:39) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.createPersistenceAdapter(BrokerService.java:2461) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.getPersistenceAdapter(BrokerService.java:1236) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.getSystemUsage(BrokerService.java:1148) [activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.checkMemorySystemUsageLimits(BrokerService.java:2132) [activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.start(BrokerService.java:596) [activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doCompositeConnect(VMTransportFactory.java:127) [activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doConnect(VMTransportFactory.java:56) [activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.TransportFactory.connect(TransportFactory.java:69) [activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:330) [activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:345) [activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:303) [activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:243) [activemq-client-5.13.2.jar:5.13.2]
+	at wdsr.exercise4.sender.JmsSender.sendTextToQueue(JmsSender.java:27) [main/:?]
+	at wdsr.exercise4.Main.main(Main.java:8) [main/:?]
+Caused by: java.lang.ClassNotFoundException: org.apache.activemq.store.kahadb.KahaDBPersistenceAdapter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[?:1.8.0_77]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_77]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[?:1.8.0_77]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_77]
+	at org.apache.activemq.broker.BrokerService.createPersistenceAdapter(BrokerService.java:2456) ~[activemq-broker-5.13.2.jar:5.13.2]
+	... 13 more
+3333 [main] ERROR org.apache.activemq.broker.BrokerService [] - Failed to start Apache ActiveMQ ([localhost, null], java.lang.RuntimeException: Fatally failed to create SystemUsageorg.apache.activemq.store.kahadb.KahaDBPersistenceAdapter)
+3344 [main] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, null) is shutting down
+3462 [main] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, null) uptime 0.257 seconds
+3463 [main] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, null) is shutdown
+3470 [main] ERROR wdsr.exercise4.sender.JmsSender [] - Error: 
+javax.jms.JMSException: Could not create Transport. Reason: java.lang.RuntimeException: Fatally failed to create SystemUsageorg.apache.activemq.store.kahadb.KahaDBPersistenceAdapter
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:332) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:345) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:303) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:243) ~[activemq-client-5.13.2.jar:5.13.2]
+	at wdsr.exercise4.sender.JmsSender.sendTextToQueue(JmsSender.java:27) [main/:?]
+	at wdsr.exercise4.Main.main(Main.java:8) [main/:?]
+Caused by: java.lang.RuntimeException: Fatally failed to create SystemUsageorg.apache.activemq.store.kahadb.KahaDBPersistenceAdapter
+	at org.apache.activemq.broker.BrokerService.getSystemUsage(BrokerService.java:1159) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.checkMemorySystemUsageLimits(BrokerService.java:2132) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.start(BrokerService.java:596) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doCompositeConnect(VMTransportFactory.java:127) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doConnect(VMTransportFactory.java:56) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.TransportFactory.connect(TransportFactory.java:69) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:330) ~[activemq-client-5.13.2.jar:5.13.2]
+	... 5 more
+Caused by: java.io.IOException: org.apache.activemq.store.kahadb.KahaDBPersistenceAdapter
+	at org.apache.activemq.util.IOExceptionSupport.create(IOExceptionSupport.java:39) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.createPersistenceAdapter(BrokerService.java:2461) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.getPersistenceAdapter(BrokerService.java:1236) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.getSystemUsage(BrokerService.java:1148) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.checkMemorySystemUsageLimits(BrokerService.java:2132) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.start(BrokerService.java:596) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doCompositeConnect(VMTransportFactory.java:127) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doConnect(VMTransportFactory.java:56) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.TransportFactory.connect(TransportFactory.java:69) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:330) ~[activemq-client-5.13.2.jar:5.13.2]
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.apache.activemq.store.kahadb.KahaDBPersistenceAdapter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[?:1.8.0_77]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_77]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[?:1.8.0_77]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_77]
+	at org.apache.activemq.broker.BrokerService.createPersistenceAdapter(BrokerService.java:2456) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.getPersistenceAdapter(BrokerService.java:1236) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.getSystemUsage(BrokerService.java:1148) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.checkMemorySystemUsageLimits(BrokerService.java:2132) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.start(BrokerService.java:596) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doCompositeConnect(VMTransportFactory.java:127) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doConnect(VMTransportFactory.java:56) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.TransportFactory.connect(TransportFactory.java:69) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:330) ~[activemq-client-5.13.2.jar:5.13.2]
+	... 5 more
+2784 [main] ERROR org.apache.activemq.broker.BrokerService [] - Cannot create SystemUsage
+java.io.IOException: org.apache.activemq.store.kahadb.KahaDBPersistenceAdapter
+	at org.apache.activemq.util.IOExceptionSupport.create(IOExceptionSupport.java:39) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.createPersistenceAdapter(BrokerService.java:2461) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.getPersistenceAdapter(BrokerService.java:1236) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.getSystemUsage(BrokerService.java:1148) [activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.checkMemorySystemUsageLimits(BrokerService.java:2132) [activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.start(BrokerService.java:596) [activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doCompositeConnect(VMTransportFactory.java:127) [activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doConnect(VMTransportFactory.java:56) [activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.TransportFactory.connect(TransportFactory.java:69) [activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:330) [activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:345) [activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:303) [activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:243) [activemq-client-5.13.2.jar:5.13.2]
+	at wdsr.exercise4.sender.JmsSender.sendTextToQueue(JmsSender.java:27) [main/:?]
+	at wdsr.exercise4.Main.main(Main.java:8) [main/:?]
+Caused by: java.lang.ClassNotFoundException: org.apache.activemq.store.kahadb.KahaDBPersistenceAdapter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[?:1.8.0_77]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_77]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[?:1.8.0_77]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_77]
+	at org.apache.activemq.broker.BrokerService.createPersistenceAdapter(BrokerService.java:2456) ~[activemq-broker-5.13.2.jar:5.13.2]
+	... 13 more
+2854 [main] ERROR org.apache.activemq.broker.BrokerService [] - Failed to start Apache ActiveMQ ([localhost, null], java.lang.RuntimeException: Fatally failed to create SystemUsageorg.apache.activemq.store.kahadb.KahaDBPersistenceAdapter)
+2860 [main] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, null) is shutting down
+2946 [main] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, null) uptime 0.205 seconds
+2947 [main] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, null) is shutdown
+2962 [main] ERROR wdsr.exercise4.sender.JmsSender [] - Error: 
+javax.jms.JMSException: Could not create Transport. Reason: java.lang.RuntimeException: Fatally failed to create SystemUsageorg.apache.activemq.store.kahadb.KahaDBPersistenceAdapter
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:332) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:345) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:303) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:243) ~[activemq-client-5.13.2.jar:5.13.2]
+	at wdsr.exercise4.sender.JmsSender.sendTextToQueue(JmsSender.java:27) [main/:?]
+	at wdsr.exercise4.Main.main(Main.java:8) [main/:?]
+Caused by: java.lang.RuntimeException: Fatally failed to create SystemUsageorg.apache.activemq.store.kahadb.KahaDBPersistenceAdapter
+	at org.apache.activemq.broker.BrokerService.getSystemUsage(BrokerService.java:1159) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.checkMemorySystemUsageLimits(BrokerService.java:2132) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.start(BrokerService.java:596) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doCompositeConnect(VMTransportFactory.java:127) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doConnect(VMTransportFactory.java:56) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.TransportFactory.connect(TransportFactory.java:69) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:330) ~[activemq-client-5.13.2.jar:5.13.2]
+	... 5 more
+Caused by: java.io.IOException: org.apache.activemq.store.kahadb.KahaDBPersistenceAdapter
+	at org.apache.activemq.util.IOExceptionSupport.create(IOExceptionSupport.java:39) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.createPersistenceAdapter(BrokerService.java:2461) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.getPersistenceAdapter(BrokerService.java:1236) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.getSystemUsage(BrokerService.java:1148) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.checkMemorySystemUsageLimits(BrokerService.java:2132) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.start(BrokerService.java:596) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doCompositeConnect(VMTransportFactory.java:127) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doConnect(VMTransportFactory.java:56) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.TransportFactory.connect(TransportFactory.java:69) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:330) ~[activemq-client-5.13.2.jar:5.13.2]
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.apache.activemq.store.kahadb.KahaDBPersistenceAdapter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[?:1.8.0_77]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_77]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[?:1.8.0_77]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_77]
+	at org.apache.activemq.broker.BrokerService.createPersistenceAdapter(BrokerService.java:2456) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.getPersistenceAdapter(BrokerService.java:1236) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.getSystemUsage(BrokerService.java:1148) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.checkMemorySystemUsageLimits(BrokerService.java:2132) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.start(BrokerService.java:596) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doCompositeConnect(VMTransportFactory.java:127) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doConnect(VMTransportFactory.java:56) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.TransportFactory.connect(TransportFactory.java:69) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:330) ~[activemq-client-5.13.2.jar:5.13.2]
+	... 5 more
+2659 [main] ERROR org.apache.activemq.broker.BrokerService [] - Cannot create SystemUsage
+java.io.IOException: org.apache.activemq.store.kahadb.KahaDBPersistenceAdapter
+	at org.apache.activemq.util.IOExceptionSupport.create(IOExceptionSupport.java:39) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.createPersistenceAdapter(BrokerService.java:2461) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.getPersistenceAdapter(BrokerService.java:1236) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.getSystemUsage(BrokerService.java:1148) [activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.checkMemorySystemUsageLimits(BrokerService.java:2132) [activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.start(BrokerService.java:596) [activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doCompositeConnect(VMTransportFactory.java:127) [activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doConnect(VMTransportFactory.java:56) [activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.TransportFactory.connect(TransportFactory.java:69) [activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:330) [activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:345) [activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:303) [activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:243) [activemq-client-5.13.2.jar:5.13.2]
+	at wdsr.exercise4.sender.JmsSender.sendTextToQueue(JmsSender.java:27) [main/:?]
+	at wdsr.exercise4.Main.main(Main.java:8) [main/:?]
+Caused by: java.lang.ClassNotFoundException: org.apache.activemq.store.kahadb.KahaDBPersistenceAdapter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[?:1.8.0_77]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_77]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[?:1.8.0_77]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_77]
+	at org.apache.activemq.broker.BrokerService.createPersistenceAdapter(BrokerService.java:2456) ~[activemq-broker-5.13.2.jar:5.13.2]
+	... 13 more
+2719 [main] ERROR org.apache.activemq.broker.BrokerService [] - Failed to start Apache ActiveMQ ([localhost, null], java.lang.RuntimeException: Fatally failed to create SystemUsageorg.apache.activemq.store.kahadb.KahaDBPersistenceAdapter)
+2728 [main] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, null) is shutting down
+2822 [main] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, null) uptime 0.209 seconds
+2822 [main] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, null) is shutdown
+2833 [main] ERROR wdsr.exercise4.sender.JmsSender [] - Error: 
+javax.jms.JMSException: Could not create Transport. Reason: java.lang.RuntimeException: Fatally failed to create SystemUsageorg.apache.activemq.store.kahadb.KahaDBPersistenceAdapter
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:332) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:345) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:303) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:243) ~[activemq-client-5.13.2.jar:5.13.2]
+	at wdsr.exercise4.sender.JmsSender.sendTextToQueue(JmsSender.java:27) [main/:?]
+	at wdsr.exercise4.Main.main(Main.java:8) [main/:?]
+Caused by: java.lang.RuntimeException: Fatally failed to create SystemUsageorg.apache.activemq.store.kahadb.KahaDBPersistenceAdapter
+	at org.apache.activemq.broker.BrokerService.getSystemUsage(BrokerService.java:1159) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.checkMemorySystemUsageLimits(BrokerService.java:2132) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.start(BrokerService.java:596) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doCompositeConnect(VMTransportFactory.java:127) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doConnect(VMTransportFactory.java:56) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.TransportFactory.connect(TransportFactory.java:69) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:330) ~[activemq-client-5.13.2.jar:5.13.2]
+	... 5 more
+Caused by: java.io.IOException: org.apache.activemq.store.kahadb.KahaDBPersistenceAdapter
+	at org.apache.activemq.util.IOExceptionSupport.create(IOExceptionSupport.java:39) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.createPersistenceAdapter(BrokerService.java:2461) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.getPersistenceAdapter(BrokerService.java:1236) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.getSystemUsage(BrokerService.java:1148) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.checkMemorySystemUsageLimits(BrokerService.java:2132) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.start(BrokerService.java:596) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doCompositeConnect(VMTransportFactory.java:127) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doConnect(VMTransportFactory.java:56) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.TransportFactory.connect(TransportFactory.java:69) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:330) ~[activemq-client-5.13.2.jar:5.13.2]
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.apache.activemq.store.kahadb.KahaDBPersistenceAdapter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[?:1.8.0_77]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_77]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[?:1.8.0_77]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_77]
+	at org.apache.activemq.broker.BrokerService.createPersistenceAdapter(BrokerService.java:2456) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.getPersistenceAdapter(BrokerService.java:1236) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.getSystemUsage(BrokerService.java:1148) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.checkMemorySystemUsageLimits(BrokerService.java:2132) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.start(BrokerService.java:596) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doCompositeConnect(VMTransportFactory.java:127) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doConnect(VMTransportFactory.java:56) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.TransportFactory.connect(TransportFactory.java:69) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:330) ~[activemq-client-5.13.2.jar:5.13.2]
+	... 5 more
+2032 [main] ERROR org.apache.activemq.broker.BrokerService [] - Cannot create SystemUsage
+java.io.IOException: org.apache.activemq.store.kahadb.KahaDBPersistenceAdapter
+	at org.apache.activemq.util.IOExceptionSupport.create(IOExceptionSupport.java:39) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.createPersistenceAdapter(BrokerService.java:2461) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.getPersistenceAdapter(BrokerService.java:1236) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.getSystemUsage(BrokerService.java:1148) [activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.checkMemorySystemUsageLimits(BrokerService.java:2132) [activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.start(BrokerService.java:596) [activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doCompositeConnect(VMTransportFactory.java:127) [activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doConnect(VMTransportFactory.java:56) [activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.TransportFactory.connect(TransportFactory.java:69) [activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:330) [activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:345) [activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:303) [activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:243) [activemq-client-5.13.2.jar:5.13.2]
+	at wdsr.exercise4.sender.JmsSender.sendTextToQueue(JmsSender.java:27) [main/:?]
+	at wdsr.exercise4.Main.main(Main.java:8) [main/:?]
+Caused by: java.lang.ClassNotFoundException: org.apache.activemq.store.kahadb.KahaDBPersistenceAdapter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[?:1.8.0_77]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_77]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[?:1.8.0_77]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_77]
+	at org.apache.activemq.broker.BrokerService.createPersistenceAdapter(BrokerService.java:2456) ~[activemq-broker-5.13.2.jar:5.13.2]
+	... 13 more
+2082 [main] ERROR org.apache.activemq.broker.BrokerService [] - Failed to start Apache ActiveMQ ([localhost, null], java.lang.RuntimeException: Fatally failed to create SystemUsageorg.apache.activemq.store.kahadb.KahaDBPersistenceAdapter)
+2089 [main] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, null) is shutting down
+2148 [main] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, null) uptime 0.157 seconds
+2149 [main] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, null) is shutdown
+2156 [main] ERROR wdsr.exercise4.sender.JmsSender [] - Error: 
+javax.jms.JMSException: Could not create Transport. Reason: java.lang.RuntimeException: Fatally failed to create SystemUsageorg.apache.activemq.store.kahadb.KahaDBPersistenceAdapter
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:332) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:345) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:303) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:243) ~[activemq-client-5.13.2.jar:5.13.2]
+	at wdsr.exercise4.sender.JmsSender.sendTextToQueue(JmsSender.java:27) [main/:?]
+	at wdsr.exercise4.Main.main(Main.java:8) [main/:?]
+Caused by: java.lang.RuntimeException: Fatally failed to create SystemUsageorg.apache.activemq.store.kahadb.KahaDBPersistenceAdapter
+	at org.apache.activemq.broker.BrokerService.getSystemUsage(BrokerService.java:1159) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.checkMemorySystemUsageLimits(BrokerService.java:2132) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.start(BrokerService.java:596) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doCompositeConnect(VMTransportFactory.java:127) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doConnect(VMTransportFactory.java:56) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.TransportFactory.connect(TransportFactory.java:69) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:330) ~[activemq-client-5.13.2.jar:5.13.2]
+	... 5 more
+Caused by: java.io.IOException: org.apache.activemq.store.kahadb.KahaDBPersistenceAdapter
+	at org.apache.activemq.util.IOExceptionSupport.create(IOExceptionSupport.java:39) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.createPersistenceAdapter(BrokerService.java:2461) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.getPersistenceAdapter(BrokerService.java:1236) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.getSystemUsage(BrokerService.java:1148) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.checkMemorySystemUsageLimits(BrokerService.java:2132) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.start(BrokerService.java:596) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doCompositeConnect(VMTransportFactory.java:127) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doConnect(VMTransportFactory.java:56) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.TransportFactory.connect(TransportFactory.java:69) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:330) ~[activemq-client-5.13.2.jar:5.13.2]
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: org.apache.activemq.store.kahadb.KahaDBPersistenceAdapter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[?:1.8.0_77]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_77]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[?:1.8.0_77]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_77]
+	at org.apache.activemq.broker.BrokerService.createPersistenceAdapter(BrokerService.java:2456) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.getPersistenceAdapter(BrokerService.java:1236) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.getSystemUsage(BrokerService.java:1148) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.checkMemorySystemUsageLimits(BrokerService.java:2132) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.broker.BrokerService.start(BrokerService.java:596) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doCompositeConnect(VMTransportFactory.java:127) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.vm.VMTransportFactory.doConnect(VMTransportFactory.java:56) ~[activemq-broker-5.13.2.jar:5.13.2]
+	at org.apache.activemq.transport.TransportFactory.connect(TransportFactory.java:69) ~[activemq-client-5.13.2.jar:5.13.2]
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:330) ~[activemq-client-5.13.2.jar:5.13.2]
+	... 5 more
+6096 [main] INFO  wdsr.exercise4.sender.JmsSender [] - 10000 non-persistent messages sent in 1745 milliseconds.
+103246 [main] INFO  wdsr.exercise4.sender.JmsSender [] - 10000 persistent messages sent in 97146 milliseconds.
