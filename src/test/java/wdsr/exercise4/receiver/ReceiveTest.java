@@ -21,6 +21,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.jms.core.JmsTemplate;
+import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -55,6 +56,7 @@ public class ReceiveTest {
 	}	
 	
 	@Test
+	@DirtiesContext
 	public void shouldReceiveFromQueue_whenPriceAlertObjectSent() throws InterruptedException {
 		// given
     	final long timestamp = System.currentTimeMillis();
@@ -78,6 +80,7 @@ public class ReceiveTest {
 	}
 	
 	@Test
+	@DirtiesContext
 	public void shouldReceiveFromQueue_whenVolumeAlertObjectSent() throws InterruptedException {
 		// given
     	final long timestamp = System.currentTimeMillis();
@@ -101,6 +104,7 @@ public class ReceiveTest {
 	}
 	
 	@Test
+	@DirtiesContext
 	public void shouldReceiveFromQueue_whenPriceAlertTextSent() throws InterruptedException {
 		// given
     	final long timestamp = System.currentTimeMillis();
@@ -127,6 +131,7 @@ public class ReceiveTest {
 	}
 	
 	@Test
+	@DirtiesContext
 	public void shouldReceiveFromQueue_whenVolumeAlertTextSent() throws InterruptedException {
 		// given
     	final long timestamp = System.currentTimeMillis();
@@ -153,6 +158,7 @@ public class ReceiveTest {
 	}
 	
 	@Test
+	@DirtiesContext
 	public void shouldReceiveAllFromQueue_whenMoreThanOneMessageSent() throws InterruptedException {
 		// given
     	final long timestamp = System.currentTimeMillis();

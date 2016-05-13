@@ -37,6 +37,7 @@ ext {
 
 dependencies {
     compile "javax:javaee-api:7.0"
+    compile "org.apache.activemq:activemq-spring:${activemqVersion}"
     compile libraries.spring
     compile libraries.log4j
     testCompile libraries.activemqCore

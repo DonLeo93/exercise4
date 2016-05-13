@@ -1,5 +1,8 @@
 package wdsr.exercise4.receiver;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import javax.jms.Connection;
@@ -19,8 +22,6 @@ import org.slf4j.LoggerFactory;
 
 import wdsr.exercise4.PriceAlert;
 import wdsr.exercise4.VolumeAlert;
-import wdsr.exercise4.sender.JmsSender;
-import wdsr.exercise4.sender.UniversalJmsListener;
 
 /**
  * TODO Complete this class so that it consumes messages from the given queue and invokes the registered callback when an alert is received.
@@ -33,6 +34,8 @@ public class JmsQueueReceiver {
 	private Session session = null;
 	private MessageConsumer consumer = null;
 	private Connection connection = null;
+	private ActiveMQConnectionFactory connectionFactory = null;
+	private String queueName;
 	
 	static final String PRICE_ALERT_TYPE = "PriceAlert";
 	static final String VOLUME_ALERT_TYPE = "VolumeAlert";
@@ -42,21 +45,9 @@ public class JmsQueueReceiver {
 	 * @param queueName Name of the queue to consume messages from.
 	 */
 	public JmsQueueReceiver(final String queueName) {
-		try {
-			ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("vm://localhost");
-
-            connection = connectionFactory.createConnection();
-
-            session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-
-            Destination destination = session.createQueue(queueName);
-
-            consumer = session.createConsumer(destination);
-            
-                  
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+		this.queueName=queueName;
+		connectionFactory = new ActiveMQConnectionFactory("vm://localhost");
+		connectionFactory.setTrustAllPackages(true);         
 	}
 
 	/**
@@ -64,66 +55,46 @@ public class JmsQueueReceiver {
 	 * @param alertService Callback to be registered.
 	 */
 	public void registerCallback(AlertService alertService) {
-			try {
-				connection.start();
-				
-				consumer.setMessageListener(new MessageListener() {
-					
-					@Override
-					public void onMessage(Message message) {
-						try {
-							if(message instanceof ObjectMessage){
-								if(message.getJMSType().equals(VOLUME_ALERT_TYPE)){
-									VolumeAlert volumeAlert = (VolumeAlert)(((ObjectMessage)message).getObject());
-									
-									alertService.processVolumeAlert(volumeAlert);
-								}else if(message.getJMSType().equals(PRICE_ALERT_TYPE)){
-									Object object = ((ObjectMessage)message).getObject();
-									PriceAlert priceAlert = (PriceAlert)object;
-									
-									alertService.processPriceAlert(priceAlert);
-								}
-							}else if(message instanceof TextMessage){
-								if(message.getJMSType().equals(VOLUME_ALERT_TYPE)){
-									String[] parts = ((TextMessage)message).getText().split("\n");
-									Long timestamp = Long.parseLong(parts[0].split("=")[1]);
-									String stock = parts[1].split("=")[1];
-									Long volume = Long.parseLong(parts[2].split("=")[1]);
-									
-									alertService.processVolumeAlert(new VolumeAlert(timestamp, stock, volume));
-								}else if(message.getJMSType().equals(PRICE_ALERT_TYPE)){
-									String[] parts = ((TextMessage)message).getText().split("\n");
-									Long timestamp = Long.parseLong(parts[0].split("=")[1]);
-									String stock = parts[1].split("=")[1];
-									BigDecimal price = BigDecimal.valueOf(Long.parseLong(parts[2].split("= ")[1]));
-									
-									alertService.processPriceAlert(new PriceAlert(timestamp, stock, price));
-								}
-							}
-							
-						} catch (JMSException e) {
-							e.printStackTrace();
+		try {
+			connection = connectionFactory.createConnection();
+			session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
+			Destination destination = session.createQueue(this.queueName);
+			consumer = session.createConsumer(destination, "JMSType='PriceAlert' OR JMSType='VolumeAlert'");
+			connection.start();
+			consumer.setMessageListener( message -> {
+				try {
+					if(message instanceof TextMessage){
+						List<String> alert = new ArrayList<>();
+						if(message.getJMSType().equals("PriceAlert")){
+							String[] priceAlertMsg = ((TextMessage)message).getText().split("\n");
+							alert.add(priceAlertMsg[0].split("=")[1]);
+							alert.add(priceAlertMsg[1].split("=")[1]);
+							alert.add(priceAlertMsg[2].split("=")[1]);
+							PriceAlert priceAlert = new PriceAlert(Long.parseLong(alert.get(0)), alert.get(1), BigDecimal.valueOf(Long.parseLong(alert.get(2).replaceAll(" ", ""))));
+							alertService.processPriceAlert(priceAlert);
+						} else if(message.getJMSType().equals("VolumeAlert")){
+							String[] volumeAlertMsg = ((TextMessage)message).getText().split("\n");
+							alert.add(volumeAlertMsg[0].split("=")[1]);
+							alert.add(volumeAlertMsg[1].split("=")[1]);
+							alert.add(volumeAlertMsg[2].split("=")[1]);
+							VolumeAlert volumeAlert = new VolumeAlert(Long.parseLong(alert.get(0)), alert.get(1), Long.parseLong(alert.get(2).replaceAll(" ", "")));
+							alertService.processVolumeAlert(volumeAlert);
 						}
-						
+					}else if(message instanceof ObjectMessage){							
+						if(message.getJMSType().equals("PriceAlert")){								
+							alertService.processPriceAlert( (PriceAlert) ((ObjectMessage)message).getObject() );
+						} else if(message.getJMSType().equals("VolumeAlert")){
+							alertService.processVolumeAlert( (VolumeAlert) ((ObjectMessage)message).getObject() );
+						}
 					}
-				});
-				
-//				Message message = consumer.receive(1000);
-//				if(message instanceof ObjectMessage){
-//					alertService.processVolumeAlert(new VolumeAlert(1,"A",1));
-//				}
-			} catch (JMSException e) {
-				e.printStackTrace();
-			}
-			
-			
-//			if(message instanceof ObjectMessage){
-//				ObjectMessage objMessage = (ObjectMessage)message;
-//				if(objMessage.getObject() instanceof VolumeAlert){
-//					VolumeAlert volumeAlert = (VolumeAlert)objMessage.getObject();
-//					alertService.processVolumeAlert(volumeAlert);
-//				}
-//			}
+					
+				} catch (JMSException e) {
+					log.error("Error:", e);
+				}				
+			});
+		} catch (JMSException e) {
+			log.error("Error:", e);
+		}
 	}
 	
 	/**
@@ -135,9 +106,8 @@ public class JmsQueueReceiver {
 			session.close();
 	        connection.close();
 		} catch (JMSException e) {
-			e.printStackTrace();
-		}
-        
+			log.error("Error:", e);
+		} 
 	}
 
 	// TODO

@@ -16,6 +16,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -39,6 +40,7 @@ public class SendTest {
 	}
 	
     @Test
+    @DirtiesContext
     public void shouldSendObjectMessageToQueue() throws InterruptedException, JMSException {
     	// given
     	final int orderId = 3;
@@ -64,6 +66,7 @@ public class SendTest {
     }
     
     @Test
+    @DirtiesContext
     public void shouldSendTextMessageToQueue() throws InterruptedException {
     	// given
     	final String text = "testText";
@@ -79,6 +82,7 @@ public class SendTest {
     }
     
     @Test
+    @DirtiesContext
     public void shouldSendMapMessageToTopic() throws InterruptedException {
     	// given
     	Map<String, String> map = new HashMap<>();
