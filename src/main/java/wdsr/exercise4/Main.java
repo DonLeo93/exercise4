@@ -1,10 +1,10 @@
 package wdsr.exercise4;
 
-import wdsr.exercise4.consumer.JmsConsumer;
+import wdsr.exercise4.publisher.JmsPublisher;
 
 public class Main {
 	public static void main(String[] args) {
-		JmsConsumer jmsSender = new JmsConsumer("DonLeo93.QUEUE");
-		jmsSender.registerCallback();
+		JmsPublisher jmsSender = new JmsPublisher("DonLeo93.TOPIC");
+		jmsSender.sendTopic();
 	}
 }
