@@ -8,15 +8,12 @@ import javax.jms.DeliveryMode;
 import javax.jms.Destination;
 import javax.jms.JMSException;
 import javax.jms.MapMessage;
-import javax.jms.MessageConsumer;
 import javax.jms.MessageProducer;
 import javax.jms.ObjectMessage;
 import javax.jms.Session;
 import javax.jms.TextMessage;
-import javax.mail.Message;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
-import org.apache.activemq.broker.BrokerService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,12 +24,13 @@ public class JmsSender {
 	
 	private final String queueName;
 	private final String topicName;
-	private ActiveMQConnectionFactory connectionFactory=null;
-
+	
+	private ActiveMQConnectionFactory connectionFactory = null;	
+	
 	public JmsSender(final String queueName, final String topicName) {
 		this.queueName = queueName;
 		this.topicName = topicName;
-		connectionFactory = new ActiveMQConnectionFactory("vm://localhost:91616");
+		connectionFactory = new ActiveMQConnectionFactory("vm://localhost:61616");
 	}
 
 	/**
@@ -70,18 +68,18 @@ public class JmsSender {
 	public void sendTextToQueue(String text) {
 		try(Connection connection = connectionFactory.createConnection();
 			Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);){
-	        connection.start();
+		    connection.start();
+		    
+		    Destination destination = session.createQueue(queueName);
+	        
+		    MessageProducer producer = session.createProducer(destination);
+		    producer.setDeliveryMode(DeliveryMode.NON_PERSISTENT);
 
-	        Destination destination = session.createQueue(queueName);
-        
-	        MessageProducer producer = session.createProducer(destination);
-	        producer.setDeliveryMode(DeliveryMode.NON_PERSISTENT);
+		    TextMessage message = session.createTextMessage(text);
+		    producer.send(message);
 
-	        TextMessage message = session.createTextMessage(text);
-	        producer.send(message);
-
-	        session.close();
-	        connection.close();
+		    session.close();
+		    connection.close();
 		}catch(JMSException e){
 			log.error("Error: ",e);
 		}
