@@ -17,26 +17,26 @@ public class JmsConsumer {
 	
 	private ActiveMQConnectionFactory connectionFactory=null;
 	private MessageConsumer consumer = null;
+	private Connection connection=null;
+	private Session session=null;
 	private int counter=0;
-	private String queueName;
 
 	public JmsConsumer(final String queueName) {
 		try{
-			this.queueName=queueName;
 			connectionFactory = new ActiveMQConnectionFactory("tcp://localhost:61616");
-			connectionFactory.setTrustAllPackages(true);  
+			connectionFactory.setTrustAllPackages(true); 
+			connection = connectionFactory.createConnection();
+			session = connection.createSession(false,Session.AUTO_ACKNOWLEDGE);
+			connection.start();
+			Destination destination = session.createQueue(queueName);
+			consumer = session.createConsumer(destination);
 		}catch(Exception e){
 			log.error("Error: ",e);
 		}
 	}
 
 	public void registerCallback() {
-			try(Connection connection = connectionFactory.createConnection();
-				Session session = connection.createSession(false,Session.AUTO_ACKNOWLEDGE);) {
-				connection.start();
-				Destination destination = session.createQueue(queueName);
-				consumer = session.createConsumer(destination);
-				
+			try{
 				consumer.setMessageListener( message -> {
 					if(message instanceof TextMessage){
 						try {
