@@ -621,3 +621,208 @@ Price= 10
 18325 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopped KahaDB
 18675 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-64751-1463731416679-0:8) uptime 1.921 seconds
 18676 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-64751-1463731416679-0:8) is shutdown
+4701 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Using Persistence Adapter: KahaDBPersistenceAdapter[I:\WDSR\exercise4\activemq-data\localhost\KahaDB]
+4727 [JMX connector] INFO  org.apache.activemq.broker.jmx.ManagementContext [] - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+5382 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - KahaDB is version 6
+5478 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovering from the journal @1:813792
+5478 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovery replayed 1 operations from the journal in 0.054 seconds.
+5512 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\exercise4\activemq-data\localhost\tmp_storage] started
+5787 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:1) is starting
+6019 [Test worker] INFO  org.apache.activemq.transport.TransportServerThreadSupport [] - Listening for connections at: tcp://127.0.0.1:62616?deleteAllMessagesOnStartup=true
+6020 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true started
+6022 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:1) started
+6022 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - For help or more information please see: http://activemq.apache.org
+6055 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Store limit is 102400 mb (current store usage is 0 mb). The data directory: I:\WDSR\exercise4\activemq-data\localhost\KahaDB only has 8417 mb of usable space. - resetting to maximum available disk space: 8417 mb
+6076 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: I:\WDSR\exercise4\activemq-data\localhost only has 8416 mb of usable space. - resetting to maximum available disk space: 8416 mb
+6659 [Test worker] INFO  wdsr.exercise4.receiver.ReceiveTest [] - Setting JMS receive timeout to 100ms
+7200 [Test worker] INFO  wdsr.exercise4.receiver.ReceiveTest [] - alertText=
+Timestamp=1463733923688
+Stock=GOOG
+Volume=500000
+7213 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost started
+7340 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost stopped
+7348 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:1) is shutting down
+7349 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true stopped
+7357 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\exercise4\activemq-data\localhost\tmp_storage] stopped
+7357 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async queue tasks
+7358 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async topic tasks
+7358 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopped KahaDB
+7896 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:1) uptime 3.709 seconds
+7896 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:1) is shutdown
+8255 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Using Persistence Adapter: KahaDBPersistenceAdapter[I:\WDSR\exercise4\activemq-data\localhost\KahaDB]
+8259 [JMX connector] INFO  org.apache.activemq.broker.jmx.ManagementContext [] - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+8560 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - KahaDB is version 6
+8567 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovering from the journal @1:823845
+8567 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovery replayed 1 operations from the journal in 0.005 seconds.
+8572 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\exercise4\activemq-data\localhost\tmp_storage] started
+8573 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:2) is starting
+8602 [Test worker] INFO  org.apache.activemq.transport.TransportServerThreadSupport [] - Listening for connections at: tcp://127.0.0.1:62616?deleteAllMessagesOnStartup=true
+8603 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true started
+8604 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:2) started
+8604 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - For help or more information please see: http://activemq.apache.org
+8712 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Store limit is 102400 mb (current store usage is 0 mb). The data directory: I:\WDSR\exercise4\activemq-data\localhost\KahaDB only has 8417 mb of usable space. - resetting to maximum available disk space: 8417 mb
+8737 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: I:\WDSR\exercise4\activemq-data\localhost only has 8416 mb of usable space. - resetting to maximum available disk space: 8416 mb
+8777 [Test worker] INFO  wdsr.exercise4.receiver.ReceiveTest [] - Setting JMS receive timeout to 100ms
+8922 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost started
+8996 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost stopped
+8999 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:2) is shutting down
+9001 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true stopped
+9002 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\exercise4\activemq-data\localhost\tmp_storage] stopped
+9002 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async queue tasks
+9002 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async topic tasks
+9003 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopped KahaDB
+9414 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:2) uptime 1.175 seconds
+9415 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:2) is shutdown
+9727 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Using Persistence Adapter: KahaDBPersistenceAdapter[I:\WDSR\exercise4\activemq-data\localhost\KahaDB]
+9731 [JMX connector] INFO  org.apache.activemq.broker.jmx.ManagementContext [] - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+10138 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - KahaDB is version 6
+10155 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovering from the journal @1:834275
+10156 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovery replayed 1 operations from the journal in 0.015 seconds.
+10157 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\exercise4\activemq-data\localhost\tmp_storage] started
+10158 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:3) is starting
+10180 [Test worker] INFO  org.apache.activemq.transport.TransportServerThreadSupport [] - Listening for connections at: tcp://127.0.0.1:62616?deleteAllMessagesOnStartup=true
+10181 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true started
+10182 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:3) started
+10182 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - For help or more information please see: http://activemq.apache.org
+10209 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Store limit is 102400 mb (current store usage is 0 mb). The data directory: I:\WDSR\exercise4\activemq-data\localhost\KahaDB only has 8417 mb of usable space. - resetting to maximum available disk space: 8417 mb
+10232 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: I:\WDSR\exercise4\activemq-data\localhost only has 8416 mb of usable space. - resetting to maximum available disk space: 8416 mb
+10263 [Test worker] INFO  wdsr.exercise4.receiver.ReceiveTest [] - Setting JMS receive timeout to 100ms
+10393 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost started
+10464 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost stopped
+10466 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:3) is shutting down
+10467 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true stopped
+10541 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\exercise4\activemq-data\localhost\tmp_storage] stopped
+10541 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async queue tasks
+10541 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async topic tasks
+10541 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopped KahaDB
+10644 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:3) uptime 0.932 seconds
+10644 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:3) is shutdown
+10835 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Using Persistence Adapter: KahaDBPersistenceAdapter[I:\WDSR\exercise4\activemq-data\localhost\KahaDB]
+10842 [JMX connector] INFO  org.apache.activemq.broker.jmx.ManagementContext [] - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+11241 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - KahaDB is version 6
+11245 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovering from the journal @1:844411
+11245 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovery replayed 1 operations from the journal in 0.002 seconds.
+11252 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\exercise4\activemq-data\localhost\tmp_storage] started
+11254 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:4) is starting
+11275 [Test worker] INFO  org.apache.activemq.transport.TransportServerThreadSupport [] - Listening for connections at: tcp://127.0.0.1:62616?deleteAllMessagesOnStartup=true
+11276 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true started
+11276 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:4) started
+11277 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - For help or more information please see: http://activemq.apache.org
+11303 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Store limit is 102400 mb (current store usage is 0 mb). The data directory: I:\WDSR\exercise4\activemq-data\localhost\KahaDB only has 8417 mb of usable space. - resetting to maximum available disk space: 8417 mb
+11324 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: I:\WDSR\exercise4\activemq-data\localhost only has 8416 mb of usable space. - resetting to maximum available disk space: 8416 mb
+11358 [Test worker] INFO  wdsr.exercise4.receiver.ReceiveTest [] - Setting JMS receive timeout to 100ms
+11492 [Test worker] INFO  wdsr.exercise4.receiver.ReceiveTest [] - alertText1=
+Timestamp=1463733927980
+Stock=GOOG
+Volume=500000
+11493 [Test worker] INFO  wdsr.exercise4.receiver.ReceiveTest [] - alertText2=
+Timestamp=1463733927980
+Stock=MSFT
+Volume=500000
+11493 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost started
+11541 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost stopped
+11544 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:4) is shutting down
+11545 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true stopped
+11546 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\exercise4\activemq-data\localhost\tmp_storage] stopped
+11547 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async queue tasks
+11547 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async topic tasks
+11547 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopped KahaDB
+11747 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:4) uptime 0.925 seconds
+11747 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:4) is shutdown
+11899 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Using Persistence Adapter: KahaDBPersistenceAdapter[I:\WDSR\exercise4\activemq-data\localhost\KahaDB]
+11907 [JMX connector] INFO  org.apache.activemq.broker.jmx.ManagementContext [] - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+12219 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - KahaDB is version 6
+12222 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovering from the journal @1:855246
+12222 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovery replayed 1 operations from the journal in 0.002 seconds.
+12224 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\exercise4\activemq-data\localhost\tmp_storage] started
+12225 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:5) is starting
+12249 [Test worker] INFO  org.apache.activemq.transport.TransportServerThreadSupport [] - Listening for connections at: tcp://127.0.0.1:62616?deleteAllMessagesOnStartup=true
+12250 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true started
+12250 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:5) started
+12250 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - For help or more information please see: http://activemq.apache.org
+12281 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Store limit is 102400 mb (current store usage is 0 mb). The data directory: I:\WDSR\exercise4\activemq-data\localhost\KahaDB only has 8416 mb of usable space. - resetting to maximum available disk space: 8416 mb
+12303 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: I:\WDSR\exercise4\activemq-data\localhost only has 8415 mb of usable space. - resetting to maximum available disk space: 8415 mb
+12344 [Test worker] INFO  wdsr.exercise4.receiver.ReceiveTest [] - Setting JMS receive timeout to 100ms
+12473 [Test worker] INFO  wdsr.exercise4.receiver.ReceiveTest [] - AlertText=
+Timestamp=1463733928961
+Stock=GOOG
+Price= 10
+12473 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost started
+12505 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost stopped
+12509 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:5) is shutting down
+12511 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true stopped
+12511 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\exercise4\activemq-data\localhost\tmp_storage] stopped
+12511 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async queue tasks
+12512 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async topic tasks
+12512 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopped KahaDB
+12727 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:5) uptime 0.837 seconds
+12727 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:5) is shutdown
+12893 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Using Persistence Adapter: KahaDBPersistenceAdapter[I:\WDSR\exercise4\activemq-data\localhost\KahaDB]
+12898 [JMX connector] INFO  org.apache.activemq.broker.jmx.ManagementContext [] - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+13204 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - KahaDB is version 6
+13208 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovering from the journal @1:865316
+13225 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovery replayed 1 operations from the journal in 0.02 seconds.
+13226 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\exercise4\activemq-data\localhost\tmp_storage] started
+13227 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:6) is starting
+13243 [Test worker] INFO  org.apache.activemq.transport.TransportServerThreadSupport [] - Listening for connections at: tcp://127.0.0.1:62616?deleteAllMessagesOnStartup=true
+13244 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true started
+13244 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:6) started
+13244 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - For help or more information please see: http://activemq.apache.org
+13284 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Store limit is 102400 mb (current store usage is 0 mb). The data directory: I:\WDSR\exercise4\activemq-data\localhost\KahaDB only has 8416 mb of usable space. - resetting to maximum available disk space: 8416 mb
+13309 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: I:\WDSR\exercise4\activemq-data\localhost only has 8415 mb of usable space. - resetting to maximum available disk space: 8415 mb
+13675 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost started
+13693 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost stopped
+14722 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:6) is shutting down
+14730 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true stopped
+14730 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\exercise4\activemq-data\localhost\tmp_storage] stopped
+14731 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async queue tasks
+14732 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async topic tasks
+14732 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopped KahaDB
+15209 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:6) uptime 2.327 seconds
+15209 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:6) is shutdown
+15511 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Using Persistence Adapter: KahaDBPersistenceAdapter[I:\WDSR\exercise4\activemq-data\localhost\KahaDB]
+15522 [JMX connector] INFO  org.apache.activemq.broker.jmx.ManagementContext [] - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+15830 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - KahaDB is version 6
+15833 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovering from the journal @1:874623
+15833 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovery replayed 1 operations from the journal in 0.002 seconds.
+15836 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\exercise4\activemq-data\localhost\tmp_storage] started
+15837 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:7) is starting
+15856 [Test worker] INFO  org.apache.activemq.transport.TransportServerThreadSupport [] - Listening for connections at: tcp://127.0.0.1:62616?deleteAllMessagesOnStartup=true
+15856 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true started
+15856 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:7) started
+15856 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - For help or more information please see: http://activemq.apache.org
+15882 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Store limit is 102400 mb (current store usage is 0 mb). The data directory: I:\WDSR\exercise4\activemq-data\localhost\KahaDB only has 8416 mb of usable space. - resetting to maximum available disk space: 8416 mb
+15901 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: I:\WDSR\exercise4\activemq-data\localhost only has 8415 mb of usable space. - resetting to maximum available disk space: 8415 mb
+15998 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost started
+16025 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost stopped
+17024 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:7) is shutting down
+17031 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true stopped
+17031 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\exercise4\activemq-data\localhost\tmp_storage] stopped
+17031 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async queue tasks
+17032 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async topic tasks
+17032 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopped KahaDB
+17339 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:7) uptime 1.838 seconds
+17339 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:7) is shutdown
+17546 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Using Persistence Adapter: KahaDBPersistenceAdapter[I:\WDSR\exercise4\activemq-data\localhost\KahaDB]
+17573 [JMX connector] INFO  org.apache.activemq.broker.jmx.ManagementContext [] - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+18245 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - KahaDB is version 6
+18248 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovering from the journal @1:883930
+18249 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovery replayed 1 operations from the journal in 0.003 seconds.
+18253 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\exercise4\activemq-data\localhost\tmp_storage] started
+18254 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:8) is starting
+18270 [Test worker] INFO  org.apache.activemq.transport.TransportServerThreadSupport [] - Listening for connections at: tcp://127.0.0.1:62616?deleteAllMessagesOnStartup=true
+18270 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true started
+18270 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:8) started
+18271 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - For help or more information please see: http://activemq.apache.org
+18296 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Store limit is 102400 mb (current store usage is 0 mb). The data directory: I:\WDSR\exercise4\activemq-data\localhost\KahaDB only has 8416 mb of usable space. - resetting to maximum available disk space: 8416 mb
+18315 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: I:\WDSR\exercise4\activemq-data\localhost only has 8415 mb of usable space. - resetting to maximum available disk space: 8415 mb
+18377 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost started
+18391 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost stopped
+19390 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:8) is shutting down
+19399 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true stopped
+19399 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\exercise4\activemq-data\localhost\tmp_storage] stopped
+19399 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async queue tasks
+19399 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async topic tasks
+19399 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopped KahaDB
+19752 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:8) uptime 2.219 seconds
+19753 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:8) is shutdown

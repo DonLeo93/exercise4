@@ -1,126 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="wdsr.exercise4.sender.SendTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-05-20T08:03:44" hostname="BEN-PLL-ST2-HP" time="5.878">
+<testsuite name="wdsr.exercise4.sender.SendTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-05-20T08:45:30" hostname="BEN-PLL-ST2-HP" time="6.084">
   <properties/>
-  <testcase name="shouldSendObjectMessageToQueue" classname="wdsr.exercise4.sender.SendTest" time="1.514"/>
-  <testcase name="shouldSendTextMessageToQueue" classname="wdsr.exercise4.sender.SendTest" time="1.382"/>
-  <testcase name="shouldSendMapMessageToTopic" classname="wdsr.exercise4.sender.SendTest" time="1.391"/>
-  <system-out><![CDATA[11462 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Using Persistence Adapter: KahaDBPersistenceAdapter[I:\WDSR\anik\exercise4\activemq-data\localhost\KahaDB]
-11466 [JMX connector] INFO  org.apache.activemq.broker.jmx.ManagementContext [] - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
-11784 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - KahaDB is version 6
-11787 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovering from the journal @1:785916
-11787 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovery replayed 1 operations from the journal in 0.002 seconds.
-11789 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\anik\exercise4\activemq-data\localhost\tmp_storage] started
-11790 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-64751-1463731416679-0:6) is starting
-11808 [Test worker] INFO  org.apache.activemq.transport.TransportServerThreadSupport [] - Listening for connections at: tcp://127.0.0.1:62616?deleteAllMessagesOnStartup=true
-11809 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true started
-11810 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-64751-1463731416679-0:6) started
-11810 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - For help or more information please see: http://activemq.apache.org
-12403 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Store limit is 102400 mb (current store usage is 0 mb). The data directory: I:\WDSR\anik\exercise4\activemq-data\localhost\KahaDB only has 8420 mb of usable space. - resetting to maximum available disk space: 8420 mb
-12422 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: I:\WDSR\anik\exercise4\activemq-data\localhost only has 8419 mb of usable space. - resetting to maximum available disk space: 8419 mb
-12804 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost started
-12991 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost stopped
-14026 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-64751-1463731416679-0:6) is shutting down
-14035 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true stopped
-14036 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\anik\exercise4\activemq-data\localhost\tmp_storage] stopped
-14036 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async queue tasks
-14036 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async topic tasks
-14036 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopped KahaDB
-14301 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-64751-1463731416679-0:6) uptime 2.848 seconds
-14301 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-64751-1463731416679-0:6) is shutdown
-14621 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Using Persistence Adapter: KahaDBPersistenceAdapter[I:\WDSR\anik\exercise4\activemq-data\localhost\KahaDB]
-14625 [JMX connector] INFO  org.apache.activemq.broker.jmx.ManagementContext [] - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
-14942 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - KahaDB is version 6
-14948 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovering from the journal @1:795208
-14949 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovery replayed 1 operations from the journal in 0.005 seconds.
-14950 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\anik\exercise4\activemq-data\localhost\tmp_storage] started
-14952 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-64751-1463731416679-0:7) is starting
-14979 [Test worker] INFO  org.apache.activemq.transport.TransportServerThreadSupport [] - Listening for connections at: tcp://127.0.0.1:62616?deleteAllMessagesOnStartup=true
-14980 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true started
-14981 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-64751-1463731416679-0:7) started
-14981 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - For help or more information please see: http://activemq.apache.org
-15002 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Store limit is 102400 mb (current store usage is 0 mb). The data directory: I:\WDSR\anik\exercise4\activemq-data\localhost\KahaDB only has 8420 mb of usable space. - resetting to maximum available disk space: 8420 mb
-15019 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: I:\WDSR\anik\exercise4\activemq-data\localhost only has 8419 mb of usable space. - resetting to maximum available disk space: 8419 mb
-15071 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost started
-15099 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost stopped
-16100 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-64751-1463731416679-0:7) is shutting down
-16106 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true stopped
-16107 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\anik\exercise4\activemq-data\localhost\tmp_storage] stopped
-16107 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async queue tasks
-16107 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async topic tasks
-16107 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopped KahaDB
-16451 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-64751-1463731416679-0:7) uptime 1.844 seconds
-16452 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-64751-1463731416679-0:7) is shutdown
-16766 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Using Persistence Adapter: KahaDBPersistenceAdapter[I:\WDSR\anik\exercise4\activemq-data\localhost\KahaDB]
-16797 [JMX connector] INFO  org.apache.activemq.broker.jmx.ManagementContext [] - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
-17170 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - KahaDB is version 6
-17173 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovering from the journal @1:804500
-17173 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovery replayed 1 operations from the journal in 0.002 seconds.
-17174 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\anik\exercise4\activemq-data\localhost\tmp_storage] started
-17174 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-64751-1463731416679-0:8) is starting
-17189 [Test worker] INFO  org.apache.activemq.transport.TransportServerThreadSupport [] - Listening for connections at: tcp://127.0.0.1:62616?deleteAllMessagesOnStartup=true
-17189 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true started
-17190 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-64751-1463731416679-0:8) started
-17190 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - For help or more information please see: http://activemq.apache.org
-17209 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Store limit is 102400 mb (current store usage is 0 mb). The data directory: I:\WDSR\anik\exercise4\activemq-data\localhost\KahaDB only has 8420 mb of usable space. - resetting to maximum available disk space: 8420 mb
-17225 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: I:\WDSR\anik\exercise4\activemq-data\localhost only has 8419 mb of usable space. - resetting to maximum available disk space: 8419 mb
-17287 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost started
-17314 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost stopped
-18316 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-64751-1463731416679-0:8) is shutting down
-18324 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true stopped
-18325 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\anik\exercise4\activemq-data\localhost\tmp_storage] stopped
-18325 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async queue tasks
-18325 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async topic tasks
-18325 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopped KahaDB
-18675 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-64751-1463731416679-0:8) uptime 1.921 seconds
-18676 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-64751-1463731416679-0:8) is shutdown
+  <testcase name="shouldSendObjectMessageToQueue" classname="wdsr.exercise4.sender.SendTest" time="1.544"/>
+  <testcase name="shouldSendTextMessageToQueue" classname="wdsr.exercise4.sender.SendTest" time="1.343"/>
+  <testcase name="shouldSendMapMessageToTopic" classname="wdsr.exercise4.sender.SendTest" time="1.379"/>
+  <system-out><![CDATA[12893 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Using Persistence Adapter: KahaDBPersistenceAdapter[I:\WDSR\exercise4\activemq-data\localhost\KahaDB]
+12898 [JMX connector] INFO  org.apache.activemq.broker.jmx.ManagementContext [] - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+13204 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - KahaDB is version 6
+13208 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovering from the journal @1:865316
+13225 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovery replayed 1 operations from the journal in 0.02 seconds.
+13226 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\exercise4\activemq-data\localhost\tmp_storage] started
+13227 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:6) is starting
+13243 [Test worker] INFO  org.apache.activemq.transport.TransportServerThreadSupport [] - Listening for connections at: tcp://127.0.0.1:62616?deleteAllMessagesOnStartup=true
+13244 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true started
+13244 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:6) started
+13244 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - For help or more information please see: http://activemq.apache.org
+13284 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Store limit is 102400 mb (current store usage is 0 mb). The data directory: I:\WDSR\exercise4\activemq-data\localhost\KahaDB only has 8416 mb of usable space. - resetting to maximum available disk space: 8416 mb
+13309 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: I:\WDSR\exercise4\activemq-data\localhost only has 8415 mb of usable space. - resetting to maximum available disk space: 8415 mb
+13675 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost started
+13693 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost stopped
+14722 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:6) is shutting down
+14730 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true stopped
+14730 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\exercise4\activemq-data\localhost\tmp_storage] stopped
+14731 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async queue tasks
+14732 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async topic tasks
+14732 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopped KahaDB
+15209 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:6) uptime 2.327 seconds
+15209 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:6) is shutdown
+15511 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Using Persistence Adapter: KahaDBPersistenceAdapter[I:\WDSR\exercise4\activemq-data\localhost\KahaDB]
+15522 [JMX connector] INFO  org.apache.activemq.broker.jmx.ManagementContext [] - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+15830 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - KahaDB is version 6
+15833 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovering from the journal @1:874623
+15833 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovery replayed 1 operations from the journal in 0.002 seconds.
+15836 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\exercise4\activemq-data\localhost\tmp_storage] started
+15837 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:7) is starting
+15856 [Test worker] INFO  org.apache.activemq.transport.TransportServerThreadSupport [] - Listening for connections at: tcp://127.0.0.1:62616?deleteAllMessagesOnStartup=true
+15856 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true started
+15856 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:7) started
+15856 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - For help or more information please see: http://activemq.apache.org
+15882 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Store limit is 102400 mb (current store usage is 0 mb). The data directory: I:\WDSR\exercise4\activemq-data\localhost\KahaDB only has 8416 mb of usable space. - resetting to maximum available disk space: 8416 mb
+15901 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: I:\WDSR\exercise4\activemq-data\localhost only has 8415 mb of usable space. - resetting to maximum available disk space: 8415 mb
+15998 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost started
+16025 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost stopped
+17024 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:7) is shutting down
+17031 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true stopped
+17031 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\exercise4\activemq-data\localhost\tmp_storage] stopped
+17031 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async queue tasks
+17032 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async topic tasks
+17032 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopped KahaDB
+17339 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:7) uptime 1.838 seconds
+17339 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:7) is shutdown
+17546 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Using Persistence Adapter: KahaDBPersistenceAdapter[I:\WDSR\exercise4\activemq-data\localhost\KahaDB]
+17573 [JMX connector] INFO  org.apache.activemq.broker.jmx.ManagementContext [] - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+18245 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - KahaDB is version 6
+18248 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovering from the journal @1:883930
+18249 [Test worker] INFO  org.apache.activemq.store.kahadb.MessageDatabase [] - Recovery replayed 1 operations from the journal in 0.003 seconds.
+18253 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\exercise4\activemq-data\localhost\tmp_storage] started
+18254 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:8) is starting
+18270 [Test worker] INFO  org.apache.activemq.transport.TransportServerThreadSupport [] - Listening for connections at: tcp://127.0.0.1:62616?deleteAllMessagesOnStartup=true
+18270 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true started
+18270 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:8) started
+18271 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - For help or more information please see: http://activemq.apache.org
+18296 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Store limit is 102400 mb (current store usage is 0 mb). The data directory: I:\WDSR\exercise4\activemq-data\localhost\KahaDB only has 8416 mb of usable space. - resetting to maximum available disk space: 8416 mb
+18315 [Test worker] WARN  org.apache.activemq.broker.BrokerService [] - Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: I:\WDSR\exercise4\activemq-data\localhost only has 8415 mb of usable space. - resetting to maximum available disk space: 8415 mb
+18377 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost started
+18391 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector vm://localhost stopped
+19390 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:8) is shutting down
+19399 [Test worker] INFO  org.apache.activemq.broker.TransportConnector [] - Connector tcp://localhost:62616?deleteAllMessagesOnStartup=true stopped
+19399 [Test worker] INFO  org.apache.activemq.store.kahadb.plist.PListStoreImpl [] - PListStore:[I:\WDSR\exercise4\activemq-data\localhost\tmp_storage] stopped
+19399 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async queue tasks
+19399 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopping async topic tasks
+19399 [Test worker] INFO  org.apache.activemq.store.kahadb.KahaDBStore [] - Stopped KahaDB
+19752 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:8) uptime 2.219 seconds
+19753 [Test worker] INFO  org.apache.activemq.broker.BrokerService [] - Apache ActiveMQ 5.13.2 (localhost, ID:BEN-PLL-ST2-HP-49217-1463733922068-0:8) is shutdown
 ]]></system-out>
-  <system-err><![CDATA[May 20, 2016 10:03:42 AM org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+  <system-err><![CDATA[May 20, 2016 10:45:29 AM org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
 INFO: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-May 20, 2016 10:03:42 AM org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
+May 20, 2016 10:45:29 AM org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
 INFO: Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/web/context/request/RequestAttributes]
-May 20, 2016 10:03:42 AM org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
-INFO: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2cb2cced, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@7cc9a235, org.springframework.test.context.support.DirtiesContextTestExecutionListener@d9cb413, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6a8b4104, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@50643d1c]
-May 20, 2016 10:03:42 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+May 20, 2016 10:45:29 AM org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
+INFO: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2468b9ba, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5fbe52d2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@700f3681, org.springframework.test.context.transaction.TransactionalTestExecutionListener@22addee4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@43690662]
+May 20, 2016 10:45:29 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 INFO: Loading XML bean definitions from class path resource [spring-sendtest-context.xml]
-May 20, 2016 10:03:42 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+May 20, 2016 10:45:29 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 INFO: Loading XML bean definitions from class path resource [spring-test-infrastructure.xml]
-May 20, 2016 10:03:42 AM org.springframework.context.support.GenericApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.support.GenericApplicationContext@618de52f: startup date [Fri May 20 10:03:42 CEST 2016]; root of context hierarchy
-May 20, 2016 10:03:42 AM org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor <init>
+May 20, 2016 10:45:29 AM org.springframework.context.support.GenericApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.GenericApplicationContext@6e6cf41f: startup date [Fri May 20 10:45:29 CEST 2016]; root of context hierarchy
+May 20, 2016 10:45:29 AM org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor <init>
 INFO: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-May 20, 2016 10:03:43 AM org.springframework.context.support.DefaultLifecycleProcessor start
+May 20, 2016 10:45:30 AM org.springframework.context.support.DefaultLifecycleProcessor start
 INFO: Starting beans in phase 2147483647
-May 20, 2016 10:03:44 AM org.springframework.context.support.GenericApplicationContext doClose
-INFO: Closing org.springframework.context.support.GenericApplicationContext@618de52f: startup date [Fri May 20 10:03:42 CEST 2016]; root of context hierarchy
-May 20, 2016 10:03:44 AM org.springframework.context.support.DefaultLifecycleProcessor stop
+May 20, 2016 10:45:30 AM org.springframework.context.support.GenericApplicationContext doClose
+INFO: Closing org.springframework.context.support.GenericApplicationContext@6e6cf41f: startup date [Fri May 20 10:45:29 CEST 2016]; root of context hierarchy
+May 20, 2016 10:45:30 AM org.springframework.context.support.DefaultLifecycleProcessor stop
 INFO: Stopping beans in phase 2147483647
-May 20, 2016 10:03:45 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+May 20, 2016 10:45:31 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 INFO: Loading XML bean definitions from class path resource [spring-sendtest-context.xml]
-May 20, 2016 10:03:45 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+May 20, 2016 10:45:31 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 INFO: Loading XML bean definitions from class path resource [spring-test-infrastructure.xml]
-May 20, 2016 10:03:45 AM org.springframework.context.support.GenericApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.support.GenericApplicationContext@48d49970: startup date [Fri May 20 10:03:45 CEST 2016]; root of context hierarchy
-May 20, 2016 10:03:45 AM org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor <init>
+May 20, 2016 10:45:31 AM org.springframework.context.support.GenericApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.GenericApplicationContext@37eb0101: startup date [Fri May 20 10:45:31 CEST 2016]; root of context hierarchy
+May 20, 2016 10:45:31 AM org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor <init>
 INFO: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-May 20, 2016 10:03:46 AM org.springframework.context.support.DefaultLifecycleProcessor start
+May 20, 2016 10:45:32 AM org.springframework.context.support.DefaultLifecycleProcessor start
 INFO: Starting beans in phase 2147483647
-May 20, 2016 10:03:46 AM org.springframework.context.support.GenericApplicationContext doClose
-INFO: Closing org.springframework.context.support.GenericApplicationContext@48d49970: startup date [Fri May 20 10:03:45 CEST 2016]; root of context hierarchy
-May 20, 2016 10:03:46 AM org.springframework.context.support.DefaultLifecycleProcessor stop
+May 20, 2016 10:45:32 AM org.springframework.context.support.GenericApplicationContext doClose
+INFO: Closing org.springframework.context.support.GenericApplicationContext@37eb0101: startup date [Fri May 20 10:45:31 CEST 2016]; root of context hierarchy
+May 20, 2016 10:45:32 AM org.springframework.context.support.DefaultLifecycleProcessor stop
 INFO: Stopping beans in phase 2147483647
-May 20, 2016 10:03:47 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+May 20, 2016 10:45:33 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 INFO: Loading XML bean definitions from class path resource [spring-sendtest-context.xml]
-May 20, 2016 10:03:47 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+May 20, 2016 10:45:33 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 INFO: Loading XML bean definitions from class path resource [spring-test-infrastructure.xml]
-May 20, 2016 10:03:47 AM org.springframework.context.support.GenericApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.support.GenericApplicationContext@3427a095: startup date [Fri May 20 10:03:47 CEST 2016]; root of context hierarchy
-May 20, 2016 10:03:47 AM org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor <init>
+May 20, 2016 10:45:33 AM org.springframework.context.support.GenericApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.GenericApplicationContext@2c4957d9: startup date [Fri May 20 10:45:33 CEST 2016]; root of context hierarchy
+May 20, 2016 10:45:34 AM org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor <init>
 INFO: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-May 20, 2016 10:03:48 AM org.springframework.context.support.DefaultLifecycleProcessor start
+May 20, 2016 10:45:34 AM org.springframework.context.support.DefaultLifecycleProcessor start
 INFO: Starting beans in phase 2147483647
-May 20, 2016 10:03:48 AM org.springframework.context.support.GenericApplicationContext doClose
-INFO: Closing org.springframework.context.support.GenericApplicationContext@3427a095: startup date [Fri May 20 10:03:47 CEST 2016]; root of context hierarchy
-May 20, 2016 10:03:48 AM org.springframework.context.support.DefaultLifecycleProcessor stop
+May 20, 2016 10:45:34 AM org.springframework.context.support.GenericApplicationContext doClose
+INFO: Closing org.springframework.context.support.GenericApplicationContext@2c4957d9: startup date [Fri May 20 10:45:33 CEST 2016]; root of context hierarchy
+May 20, 2016 10:45:34 AM org.springframework.context.support.DefaultLifecycleProcessor stop
 INFO: Stopping beans in phase 2147483647
 ]]></system-err>
 </testsuite>
