@@ -53,9 +53,6 @@ public class JmsSender {
 	        message.setJMSType("Order");
 	        message.setStringProperty("WDSR-System", "OrderProcessor");
 	        producer.send(message);
-
-	        session.close();
-	        connection.close();
 		}catch(JMSException e){
 			log.error("Error: ",e);
 		}
@@ -77,9 +74,6 @@ public class JmsSender {
 
 		    TextMessage message = session.createTextMessage(text);
 		    producer.send(message);
-
-		    session.close();
-		    connection.close();
 		}catch(JMSException e){
 			log.error("Error: ",e);
 		}
@@ -105,9 +99,6 @@ public class JmsSender {
 	            message.setString(entry.getKey(), entry.getValue());
 	        }
 	        producer.send(message);
-
-	        session.close();
-	        connection.close();
 		}catch(JMSException e){
 			log.error("Error: ",e);
 		}

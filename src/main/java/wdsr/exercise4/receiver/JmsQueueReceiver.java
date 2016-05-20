@@ -77,7 +77,6 @@ public class JmsQueueReceiver {
 					}else if(message instanceof ObjectMessage)						
 						if(message.getJMSType().equals(PRICE_ALERT_TYPE))							
 							alertService.processPriceAlert( (PriceAlert) ((ObjectMessage)message).getObject() );
-
 				} catch (JMSException e) {
 					log.error("Error: ", e);
 				}				
