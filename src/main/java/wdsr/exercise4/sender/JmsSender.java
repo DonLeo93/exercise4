@@ -49,7 +49,7 @@ public class JmsSender {
 			endTime = System.currentTimeMillis()-startTime;
 			log.info("10000 persistent messages sent in {} milliseconds.",endTime);
 		}catch(JMSException e){
-			log.error("Error: ",e);
+			log.error("Error durring sending text to queue: ",e);
 		}
 	}
 }
