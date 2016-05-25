@@ -49,7 +49,7 @@ public class JmsPublisher {
 			endTime = System.currentTimeMillis()-startTime;
 			log.info("10000 non-persistent messages sent in {} milliseconds.",endTime);
 		} catch (JMSException e){
-			log.error("Error: ", e);
+			log.error("Error durring sending topic: ", e);
 		}
 	}
 }
