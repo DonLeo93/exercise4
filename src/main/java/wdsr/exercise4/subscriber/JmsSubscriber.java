@@ -38,8 +38,8 @@ public class JmsSubscriber {
 			subscriber.setMessageListener( message -> {
 				try {
 					connection.start();
-				} catch (Exception e) {
-					log.error("Error during connection: ",e);
+				} catch (Exception e1) {
+					log.error("Error during connection: ",e1);
 				}
 				if(message instanceof TextMessage){
 					try {
