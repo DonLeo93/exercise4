@@ -1,7 +1,6 @@
 package wdsr.exercise4.consumer;
 
 import javax.jms.Connection;
-import javax.jms.DeliveryMode;
 import javax.jms.Destination;
 import javax.jms.JMSException;
 import javax.jms.MessageConsumer;
@@ -27,11 +26,11 @@ public class JmsConsumer {
 			connectionFactory.setTrustAllPackages(true); 
 			connection = connectionFactory.createConnection();
 			session = connection.createSession(false,Session.AUTO_ACKNOWLEDGE);
-			connection.start();
+			
 			Destination destination = session.createQueue(queueName);
 			consumer = session.createConsumer(destination);
 		}catch(Exception e){
-			log.error("Error: ",e);
+			log.error("Error durring creating connection: ",e);
 		}
 	}
 
@@ -43,12 +42,13 @@ public class JmsConsumer {
 							counter++;
 							log.info("#{} - MSG: {}", counter, ((TextMessage) message).getText());
 						} catch (Exception e) {
-							log.error("Error: ", e);
+							log.error("Error durring loging information about message: ", e);
 						}
 					}
 				});
+				connection.start();
 			} catch (JMSException e) {
-				log.error("Error: ", e);
+				log.error("Error durring registering callback: ", e);
 			}
 	}
 	
@@ -58,7 +58,7 @@ public class JmsConsumer {
 			if(consumer!=null)
 				consumer.close();
 		}catch(JMSException e){
-			log.error("Error: ",e);
+			log.error("Error durring closing consumer: ",e);
 		}
 	}
 }
