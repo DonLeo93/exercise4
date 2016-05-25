@@ -29,29 +29,25 @@ public class JmsSubscriber {
 			Topic topic = session.createTopic(topicName);
 			subscriber = session.createDurableSubscriber(topic, "subscriber");
 		} catch (Exception e) {
-			log.error("Error : ", e);
+			log.error("Error durring creating connection: ", e);
 		}
 	}
 	
 	public void getMessage() {
 		try {
 			subscriber.setMessageListener( message -> {
-				try {
-					connection.start();
-				} catch (Exception e1) {
-					log.error("Error during connection: ",e1);
-				}
 				if(message instanceof TextMessage){
 					try {
 						counter++;
 						log.info("# {} MSG: {}", counter, ((TextMessage) message).getText());
 					} catch (Exception e) {
-						log.error("Error: ", e);
+						log.error("Error durring getting information about message: ", e);
 					}
 				}				
 			});
+			connection.start();
 		} catch (JMSException e) {
-			log.error("Error: ", e);
+			log.error("Error during getting messages: ", e);
 		}
 	}
 }
